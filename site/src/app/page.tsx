@@ -41,7 +41,7 @@ export default function HomePage() {
         size="full"
         image="ortalForest"
         titleId="hero-title"
-        title={site.name}
+        title={<Signature write className={styles.heroSignature} label={site.name} />}
         subtitle={home.hero.subtitle}
       >
         <ButtonLink href={home.hero.primary.href} variant="light">

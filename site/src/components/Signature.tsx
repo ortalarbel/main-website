@@ -32,7 +32,9 @@ export function Signature({
           io.disconnect();
         }
       },
-      { threshold: 0.6 },
+      // The clip-path hides the whole box, so the ratio stays 0: trigger on
+      // isIntersecting and use rootMargin to wait until it is well in view.
+      { rootMargin: "0px 0px -20% 0px" },
     );
     io.observe(el);
     return () => io.disconnect();
