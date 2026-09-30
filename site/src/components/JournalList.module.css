@@ -1,0 +1,77 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: var(--space-8) clamp(1.5rem, 1rem + 2vw, 3rem);
+  align-items: start;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: var(--space-2);
+  text-align: center;
+}
+
+.photo {
+  inline-size: min(100%, 17rem);
+  aspect-ratio: 1.1;
+  margin-block-end: var(--space-4);
+  transition: transform 0.6s var(--ease-out);
+}
+
+.card:hover .photo {
+  transform: scale(1.03);
+}
+
+.meta {
+  font-size: var(--fs-meta);
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.title {
+  font-size: var(--fs-h3);
+  font-weight: 700;
+  line-height: 1.35;
+  max-inline-size: 24ch;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* The whole card is the link's hit area */
+.link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.link:focus-visible {
+  outline: none;
+}
+
+.card:has(.link:focus-visible) {
+  outline: 2px solid var(--terracotta);
+  outline-offset: 8px;
+  border-radius: 8px;
+}
+
+.excerpt {
+  max-inline-size: 34ch;
+  color: var(--ink-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.btn {
+  margin-block-start: var(--space-4);
+  min-block-size: 2.5rem;
+  padding-inline: 1.5rem;
+}
+
+.card:hover .btn {
+  background: var(--ink);
+  color: var(--cream);
+}

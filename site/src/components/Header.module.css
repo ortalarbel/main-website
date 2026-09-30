@@ -1,0 +1,218 @@
+.header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 50;
+  background: rgb(244 236 223 / 0.97);
+  border-block-start: 3px solid var(--terracotta);
+  border-block-end: 1px solid transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header[data-scrolled="true"] {
+  border-block-end-color: var(--rule);
+  box-shadow: 0 4px 18px rgb(33 40 55 / 0.06);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  block-size: var(--header-h);
+}
+
+/* Logo sits at the far (left) end, like the reference site */
+.home {
+  order: 3;
+  display: inline-flex;
+  margin-inline-start: auto;
+  color: var(--terracotta);
+  flex: none;
+  padding-block: var(--space-2);
+}
+
+.signature {
+  inline-size: 6rem;
+}
+
+.nav {
+  order: 1;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.25rem, -0.4rem + 1.2vw, 1rem);
+}
+
+.link {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border: 1.5px solid transparent;
+  border-radius: 999px;
+  font-size: 1.02rem;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.25s var(--ease-out);
+}
+
+.link:hover {
+  border-color: var(--rule-strong);
+}
+
+/* Active page: outlined pill */
+.link[aria-current="page"] {
+  border-color: var(--ink);
+}
+
+.cta {
+  order: 2;
+  min-block-size: 2.5rem;
+  padding-inline: 1.2rem;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.toggle {
+  display: none;
+  order: 1;
+  align-items: center;
+  gap: 0.6rem;
+  min-block-size: 2.75rem;
+  padding-inline: 0.25rem;
+  background: none;
+  border: 0;
+  color: var(--ink);
+  font: 700 1rem/1 var(--font-body);
+  cursor: pointer;
+}
+
+.toggleIcon {
+  position: relative;
+  inline-size: 1.5rem;
+  block-size: 0.7rem;
+}
+
+.toggleIcon::before,
+.toggleIcon::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  block-size: 1.5px;
+  background: currentColor;
+  transition: transform 0.3s var(--ease-out), inset 0.3s var(--ease-out);
+}
+
+.toggleIcon::before {
+  inset-block-start: 0;
+}
+
+.toggleIcon::after {
+  inset-block-end: 0;
+}
+
+.header[data-open="true"] .toggleIcon::before {
+  inset-block-start: calc(50% - 0.75px);
+  transform: rotate(45deg);
+}
+
+.header[data-open="true"] .toggleIcon::after {
+  inset-block-end: calc(50% - 0.75px);
+  transform: rotate(-45deg);
+}
+
+.panel {
+  position: fixed;
+  inset: calc(var(--header-h) + 3px) 0 0 0;
+  background: var(--cream);
+  padding: var(--space-6) var(--gutter) var(--space-7);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+.panel[hidden] {
+  display: none;
+}
+
+.panelLinks {
+  display: grid;
+  gap: var(--space-2);
+  text-align: center;
+}
+
+.panelLink {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 1.5px solid transparent;
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.panelLink[aria-current="page"] {
+  border-color: var(--ink);
+}
+
+.panelActions {
+  display: grid;
+  gap: var(--space-3);
+  justify-items: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .panel:not([hidden]) {
+    animation: panel-in 0.4s var(--ease-out);
+  }
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+}
+
+@media (max-width: 70rem) {
+  .nav {
+    display: none;
+  }
+
+  .toggle {
+    display: inline-flex;
+  }
+
+  .cta {
+    order: 2;
+  }
+}
+
+@media (min-width: 70.01rem) {
+  .panel {
+    display: none !important;
+  }
+}
+
+@media (max-width: 26rem) {
+  .bar {
+    gap: var(--space-3);
+  }
+
+  .signature {
+    inline-size: 5rem;
+  }
+
+  .cta {
+    padding-inline: 0.85rem;
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 21rem) {
+  .cta {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+.torn {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: -1px;
+  z-index: 2;
+  inline-size: 100%;
+  block-size: clamp(16px, 2.6vw, 38px);
+  pointer-events: none;
+}
+
+.tornTop {
+  inset-block-end: auto;
+  inset-block-start: -1px;
+  transform: scaleY(-1);
+}
+
+.title {
+  font-weight: 300;
+}
+
+.titleText {
+  position: relative;
+  display: inline-block;
+  padding-block-end: 0.18em;
+}
+
+.underline {
+  position: absolute;
+  inset-inline: -0.1em;
+  inset-block-end: -0.12em;
+  inline-size: calc(100% + 0.2em);
+  block-size: 0.28em;
+  overflow: visible;
+}
+
+.underline path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}

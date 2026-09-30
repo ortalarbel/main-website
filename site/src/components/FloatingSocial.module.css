@@ -1,0 +1,39 @@
+.rail {
+  position: fixed;
+  inset-inline-end: 1rem;
+  inset-block-start: 50%;
+  z-index: 30;
+  display: grid;
+  gap: 0.5rem;
+  transform: translateY(-50%);
+}
+
+.rail a {
+  display: grid;
+  place-items: center;
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  border-radius: 50%;
+  background: rgb(255 251 240 / 0.92);
+  color: var(--ink);
+  box-shadow: 0 2px 8px rgb(33 40 55 / 0.12);
+  transition:
+    background-color 0.25s var(--ease-out),
+    color 0.25s var(--ease-out);
+}
+
+.rail a:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.rail svg {
+  inline-size: 1.3rem;
+  block-size: 1.3rem;
+}
+
+@media (max-width: 62rem) {
+  .rail {
+    display: none;
+  }
+}

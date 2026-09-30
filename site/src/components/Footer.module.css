@@ -1,0 +1,143 @@
+.contact {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: linear-gradient(to bottom, var(--white) 0%, var(--mist) 100%);
+  padding-block: var(--space-9) var(--space-8);
+}
+
+.mountains {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  z-index: -1;
+  inline-size: 100%;
+  block-size: 70%;
+}
+
+.inner {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.block {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-4);
+}
+
+.title {
+  margin-block-end: var(--space-2);
+}
+
+.intro {
+  font-size: var(--fs-lead);
+  color: var(--ink-soft);
+}
+
+.list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.list a,
+.plain {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--rule-strong);
+}
+
+.list a:hover {
+  text-decoration-color: currentColor;
+}
+
+.plain {
+  text-decoration: none;
+  color: var(--ink-soft);
+}
+
+.list svg {
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+  flex: none;
+}
+
+.social {
+  display: flex;
+  gap: var(--space-3);
+  margin-block-start: var(--space-3);
+}
+
+.social a {
+  display: grid;
+  place-items: center;
+  inline-size: 2.6rem;
+  block-size: 2.6rem;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  transition: background-color 0.25s var(--ease-out), color 0.25s var(--ease-out);
+}
+
+.social a:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.social svg {
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+}
+
+.brand {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-2);
+  text-align: center;
+}
+
+.signature {
+  inline-size: 9rem;
+  color: var(--terracotta);
+}
+
+.tagline {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+.legal {
+  background: var(--cream);
+  padding-block: var(--space-5);
+  font-size: var(--fs-meta);
+  color: var(--ink-soft);
+}
+
+.legalInner {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.legalNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 0;
+}
+
+.legalNav li:not(:last-child)::after {
+  content: "|";
+  margin-inline: 0.75rem;
+  color: var(--rule-strong);
+}
+
+.legalNav a {
+  color: var(--ink-soft);
+}

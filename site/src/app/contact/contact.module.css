@@ -1,0 +1,70 @@
+.inner {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-5);
+  max-inline-size: 40rem;
+}
+
+.photo {
+  inline-size: 10rem;
+  aspect-ratio: 0.9;
+}
+
+.whatsapp {
+  min-block-size: 3.4rem;
+  padding-inline: 2.2rem;
+  font-size: 1.1rem;
+}
+
+.channels {
+  inline-size: 100%;
+  margin-block-start: var(--space-5);
+  padding: var(--space-3) var(--space-6);
+  background: var(--white);
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 14px rgb(33 40 55 / 0.06);
+  text-align: start;
+}
+
+.channels li {
+  display: grid;
+  grid-template-columns: 1.4rem 6rem minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: center;
+  padding-block: var(--space-4);
+}
+
+.channels li + li {
+  border-block-start: 1px solid var(--rule);
+}
+
+.channels svg {
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+  color: var(--terracotta);
+}
+
+.channels a {
+  justify-self: start;
+  font-weight: 700;
+  text-decoration-color: var(--rule-strong);
+}
+
+.channels a:hover {
+  text-decoration-color: currentColor;
+}
+
+.label {
+  color: var(--ink-muted);
+  font-size: var(--fs-small);
+}
+
+@media (max-width: 30rem) {
+  .channels {
+    padding-inline: var(--space-4);
+  }
+
+  .channels li {
+    grid-template-columns: 1.4rem 4.8rem minmax(0, 1fr);
+  }
+}

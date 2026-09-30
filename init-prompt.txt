@@ -1,0 +1,1349 @@
+Your task is to design and build a completely new website from scratch for אורטל ארבל, using the content of her existing website as source material and the visual direction of a modern inspiration site.
+
+This is not a simple redesign or migration. You are expected to rethink the information architecture, copy, visual hierarchy, user journey, and overall presentation.
+
+The new site should feel like a professionally designed 2026 personal-brand website.
+
+Source websites
+Existing website — CONTENT SOURCE
+https://m2zd9ejgeluldlzaeljyh3wpyg03.shopix.me/
+
+Use this site as the primary source of truth for:
+
+information about Ortal
+
+her personal story
+
+positioning
+
+services
+
+courses
+
+workshops
+
+existing testimonials
+
+articles
+
+contact information
+
+existing calls to action
+
+existing photographs where useful
+
+Do not preserve its visual design.
+
+The current site is structurally and visually outdated.
+
+You are allowed to substantially reorganize its content.
+
+Inspiration website — DESIGN REFERENCE
+https://www.arad-woldenberg.com/
+
+Study this site carefully.
+
+Use it as the primary visual and UX reference, but do NOT make a pixel-for-pixel clone.
+
+Extract the design principles behind it:
+
+strong use of photography
+
+large, expressive layouts
+
+generous whitespace
+
+restrained color palette
+
+editorial feeling
+
+modern typography
+
+personal rather than corporate presentation
+
+asymmetric compositions
+
+short sections with strong visual rhythm
+
+minimal visual clutter
+
+thoughtful spacing
+
+elegant navigation
+
+subtle interaction
+
+strong mobile execution
+
+The result should live in roughly the same design universe while having its own visual identity.
+
+Core objective
+Create a complete website that serves two main purposes:
+
+1. Personal brand / About Ortal
+A visitor should quickly understand:
+
+who Ortal is
+
+what she believes
+
+what she does
+
+how she works
+
+what kind of person/client she works with
+
+what makes her approach different
+
+what her personal journey has been
+
+The site should create trust, connection and curiosity.
+
+2. Course discovery and conversion
+The site should also help visitors:
+
+discover current courses/programs
+
+understand what each course is about
+
+understand who it is intended for
+
+understand the benefits/outcomes
+
+view relevant details
+
+register or purchase
+
+Course registration/purchase is therefore one of the primary conversion goals.
+
+Do not make the entire site feel like a sales funnel.
+
+The personal brand and the commercial offering should reinforce each other.
+
+Audience and positioning
+Based on the existing content, Ortal's work is primarily around topics such as:
+
+self-expression
+
+inner confidence
+
+perfectionism
+
+self-criticism
+
+procrastination
+
+feeling stuck
+
+courage
+
+independence
+
+personal development
+
+internal leadership
+
+creativity
+
+acting from desire rather than fear or obligation
+
+discovering one's strengths / "zone of genius"
+
+Much of the existing language addresses independent women, creators and entrepreneurs.
+
+Study the source site carefully before deciding exactly how to position this.
+
+Do not invent a completely different audience.
+
+Language
+The primary language of the entire website is Hebrew.
+
+The site must be designed RTL-native from the start.
+
+Do not create an LTR website and then merely apply direction: rtl.
+
+Think about RTL throughout:
+
+navigation
+
+visual hierarchy
+
+cards
+
+icons
+
+arrows
+
+galleries
+
+forms
+
+buttons
+
+grids
+
+content order
+
+mobile navigation
+
+mixed Hebrew/English/numeric content
+
+Use:
+
+<html lang="he" dir="rtl">
+or the appropriate framework equivalent.
+
+Copywriting freedom
+You are explicitly allowed to act as a copywriter.
+
+You should NOT simply copy all of the old text verbatim.
+
+The existing website should be treated as raw source material.
+
+You may:
+
+rewrite headlines
+
+shorten long paragraphs
+
+improve weak wording
+
+consolidate repetitive sections
+
+create better section introductions
+
+improve CTAs
+
+change content order
+
+rewrite descriptions of services
+
+turn long prose into concise sections
+
+create stronger hierarchy
+
+improve readability
+
+create a clearer narrative
+
+The new copy should feel natural and human.
+
+Tone:
+
+personal
+
+intelligent
+
+warm
+
+grounded
+
+confident
+
+thoughtful
+
+emotionally aware
+
+direct
+
+not overly spiritual
+
+not corporate
+
+not aggressively sales-oriented
+
+Avoid generic coaching language such as:
+
+"unlock your full potential"
+
+"become your best self"
+
+"transform your life forever"
+
+unless the meaning is genuinely supported by Ortal's existing language.
+
+Do not fabricate:
+
+qualifications
+
+certifications
+
+testimonials
+
+statistics
+
+client counts
+
+media appearances
+
+course outcomes
+
+guarantees
+
+dates
+
+prices
+
+If something important is unknown, flag it as TODO.
+
+Build the full site
+This is NOT only a landing page.
+
+Create a coherent full website.
+
+You should determine the ideal site architecture after reviewing all existing content.
+
+A likely structure might include:
+
+Home
+
+About
+
+Courses / Programs
+
+Individual course pages
+
+Personal coaching / 1:1
+
+Articles / Blog
+
+Individual article pages if appropriate
+
+Contact
+
+This is only a starting suggestion.
+
+Do not create unnecessary pages purely because traditional websites have them.
+
+If multiple sections are better combined, do so.
+
+If the source material supports additional meaningful pages, you may create them.
+
+Homepage
+The homepage should act as the primary narrative and entry point.
+
+A good high-level direction might be:
+
+Hero
+Create a highly polished opening.
+
+Use strong photography.
+
+Communicate immediately:
+
+Ortal's identity
+
+what she helps people with
+
+the central idea of "ביטוי עצמי מלא"
+
+the emotional world of the brand
+
+Keep hero copy concise.
+
+Possible thematic territory from the old site:
+
+ביקורת עצמית
+
+פרפקציוניזם
+
+תקיעות
+
+חוסר ביטחון
+
+ניסיון "לעשות נכון"
+
+מעבר לעשייה חופשית, אמיצה ואותנטית
+
+Do not overload the hero.
+
+Include one primary CTA.
+
+The CTA could lead toward current programs/courses.
+
+A secondary CTA may lead toward Ortal's story/about page.
+
+Recognition / resonance
+Create a section that makes the visitor feel:
+
+"She understands what I am experiencing."
+
+Use themes from the original site such as:
+
+פרפקציוניזם
+
+ביקורת עצמית
+
+דחיינות
+
+קושי לפעול
+
+ניסיון לעמוד בציפיות
+
+הידיעה מה אני רוצה לצד קושי לעשות את זה
+
+מאמץ מתמשך
+
+פחד לטעות
+
+תחושה שהחיים מתנהלים לפי "צריך"
+
+This should be emotionally precise.
+
+Avoid making it melodramatic.
+
+Ortal's perspective / philosophy
+Explain the central worldview behind her work.
+
+Do not make this a generic "method" unless she actually describes one.
+
+Show what she believes about:
+
+self-expression
+
+fear
+
+internal leadership
+
+criticism
+
+confidence
+
+action
+
+freedom
+
+personal choice
+
+This is an important brand-building section.
+
+Featured courses / programs
+Surface the most important active offerings prominently.
+
+The old site contains material such as:
+
+מנהיגות פנימית
+
+אימון לביטוי עצמי מלא
+
+גילוי אזור הגאונות
+
+ליווי למטיילת העצמאית
+
+Verify what is actually present and relevant before using them.
+
+Each offering should clearly communicate:
+
+name
+
+short explanation
+
+who it is for
+
+what it helps with
+
+delivery format if known
+
+CTA
+
+If price/date information is missing or appears outdated, do not invent it.
+
+Mark missing transactional information clearly as TODO.
+
+About teaser
+Include a strong short version of Ortal's personal story.
+
+Link to a full About page.
+
+Use photography prominently.
+
+The visitor should feel that there is a real person behind the site.
+
+Testimonials
+Use actual testimonials from the source site.
+
+Present them in an editorial, personal way.
+
+Avoid a generic SaaS testimonial carousel.
+
+Potential treatments:
+
+oversized pull quote
+
+alternating quotes with portraits if source portraits exist
+
+staggered editorial blocks
+
+one primary quote + several smaller quotes
+
+Do not invent attribution.
+
+Articles / ideas
+Feature a small number of relevant articles.
+
+The existing content includes themes such as:
+
+perfectionism
+
+procrastination
+
+zone of genius
+
+confidence
+
+independence / solo travel
+
+Treat the content like an editorial publication rather than a corporate "resources" grid.
+
+Final CTA
+End the homepage with a strong but warm invitation.
+
+The main action should likely be:
+
+view/join a course
+
+register
+
+learn about current programs
+
+A secondary action may be:
+
+contact Ortal
+
+WhatsApp
+
+The final section should feel personal rather than transactional.
+
+About page
+This should be a meaningful page rather than a résumé.
+
+Use Ortal's existing story as raw material.
+
+Create a narrative with:
+
+who she is today
+
+relevant parts of her personal journey
+
+her relationship with criticism/perfectionism/fear
+
+turning points
+
+how that shaped her work
+
+how she thinks about helping others
+
+You may significantly edit the structure and prose.
+
+Preserve factual accuracy.
+
+Photography should play a central role.
+
+The page should feel intimate without being overly sentimental.
+
+Courses / Programs
+Create a dedicated area for courses and programs.
+
+It should support both:
+
+discovering programs
+
+making a purchase/registration decision
+
+Create a flexible system because offerings may change.
+
+Each program should ideally have:
+
+title
+
+clear positioning
+
+audience
+
+problem/context
+
+what participants will experience/learn
+
+format
+
+relevant details
+
+testimonials if applicable
+
+FAQ if sufficient information exists
+
+clear registration/purchase CTA
+
+Do not fabricate price, start date or schedule.
+
+If the live site has current information, use it.
+
+If not, leave a clear placeholder/TODO.
+
+Course detail page
+Create at least one polished reusable template for individual course pages.
+
+This page should be conversion-oriented while retaining the site's overall editorial style.
+
+Suggested flow:
+
+Course hero
+
+Who this is for
+
+The current problem/state
+
+What the course explores
+
+What participants can expect
+
+Structure/modules if available
+
+Who Ortal is / why she created it
+
+Testimonials
+
+FAQ
+
+Registration/purchase CTA
+
+Only include sections supported by available content.
+
+Never make up modules, promises or outcomes.
+
+Personal coaching / 1:1
+The existing wording includes:
+
+"ליווי אישי"
+
+and:
+
+"כי לפעמים צריך את כל הזרקור לעצמך"
+
+This is strong brand language.
+
+Give personal work its own page or substantial section.
+
+Explain:
+
+who it is suited for
+
+what type of situations bring people to Ortal
+
+what the process feels like
+
+what distinguishes individual work from a course
+
+Do not make unsupported claims about therapeutic or clinical outcomes.
+
+Blog / Articles
+Create a clean editorial blog area.
+
+Do not make it look like a generic WordPress grid.
+
+Use:
+
+strong typography
+
+large article titles
+
+good reading width
+
+strong images where appropriate
+
+generous spacing
+
+If the source site exposes existing article content, preserve it and improve presentation.
+
+For article copy, only make light editorial improvements unless the old copy is clearly poor or repetitive.
+
+Contact
+Create a simple, approachable contact page/section.
+
+Use actual contact methods from the old site.
+
+WhatsApp should be prominent if it is currently a primary communication channel.
+
+Keep the contact experience simple.
+
+Do not create unnecessary forms unless useful.
+
+Purchase / registration experience
+One primary site goal is course purchase or registration.
+
+Inspect the current site and determine what registration/purchase mechanism exists.
+
+Preserve functional URLs where appropriate.
+
+If the old site uses an external checkout/payment provider, integrate or link to it.
+
+If the existing purchase mechanism cannot reasonably be reproduced because information or credentials are unavailable:
+
+create the UI and CTA flow
+
+use clearly marked TODO integration points
+
+explain what still needs to be connected
+
+Do not fake successful payment functionality.
+
+Images and photography
+You only have access to images that can be retrieved from the live site.
+
+You are NOT required to reuse all existing photography.
+
+You have freedom to:
+
+reuse strong existing images
+
+discard weak/outdated images
+
+source appropriate images from the internet
+
+use high-quality free-to-use imagery where licensing allows it
+
+Strong preference:
+
+Use authentic images of Ortal wherever available.
+
+Do not replace Ortal herself with generic stock models in sections that are specifically about her.
+
+For supporting/background imagery, you may source external photos.
+
+If sourcing images from the web:
+
+verify licensing / permitted usage
+
+prefer reputable free-use sources
+
+document the source
+
+do not hotlink production assets if avoidable
+
+If existing photography is insufficient, create a short photography recommendations list for a future professional shoot.
+
+Examples:
+
+environmental hero portrait
+
+close-up portrait
+
+casual outdoor portrait
+
+work/session setting
+
+movement/travel imagery
+
+workshop/group imagery
+
+Visual direction
+The desired feeling is:
+
+modern, sophisticated, natural, personal, editorial, warm and confident.
+
+It should not look like:
+
+a Shopix template
+
+a Wix coaching template
+
+a SaaS site
+
+a corporate consultancy
+
+a generic wellness brand
+
+Avoid:
+
+excessive gradients
+
+glassmorphism
+
+excessive rounded rectangles
+
+excessive shadows
+
+repetitive feature cards
+
+generic purple/pink coaching aesthetics
+
+random abstract blobs
+
+AI-generated decorative clutter
+
+icon-heavy layouts
+
+unnecessary badges
+
+over-animation
+
+Prefer:
+
+photography-led layouts
+
+natural whitespace
+
+typography as a visual element
+
+restrained color
+
+subtle borders
+
+different section rhythms
+
+editorial compositions
+
+intentional asymmetry
+
+sophisticated image crops
+
+calm but distinctive visual identity
+
+Branding
+There may not be a mature existing visual identity.
+
+You are allowed to establish one.
+
+Derive a restrained design system from:
+
+Ortal's personality
+
+existing photography
+
+the source copy
+
+the visual inspiration
+
+Define:
+
+background colors
+
+text colors
+
+accent color
+
+typography
+
+border treatments
+
+spacing system
+
+button styles
+
+image radii if used
+
+section rhythm
+
+Do not over-brand the page.
+
+The photography and typography should carry most of the personality.
+
+Typography
+Typography is a major part of the design.
+
+Choose high-quality Hebrew-compatible fonts.
+
+Priorities:
+
+beautiful Hebrew rendering
+
+excellent readability
+
+strong editorial character
+
+good weights
+
+fast loading
+
+Create a deliberate hierarchy between:
+
+hero
+
+H1
+
+section title
+
+subheading
+
+body
+
+quote
+
+label
+
+metadata
+
+buttons
+
+Do not make every heading look identical.
+
+Navigation
+Create a clean RTL navigation.
+
+The exact information architecture should emerge from the content audit.
+
+Likely items might include:
+
+בית
+
+אודות
+
+קורסים
+
+ליווי אישי
+
+מאמרים
+
+יצירת קשר
+
+Do not blindly use these if a cleaner architecture exists.
+
+Highlight a primary course/program CTA where appropriate.
+
+Keep navigation minimal.
+
+Mobile
+Mobile is a first-class deliverable.
+
+Do not treat it as a desktop layout stacked vertically.
+
+Design specifically for mobile:
+
+hero
+
+photo crops
+
+nav
+
+cards
+
+testimonials
+
+buttons
+
+long Hebrew headings
+
+mixed-direction text
+
+course detail pages
+
+checkout CTA
+
+article typography
+
+Aim for an excellent experience around 375–430px width.
+
+Motion
+Use motion sparingly.
+
+Good uses:
+
+subtle reveals
+
+gentle image transitions
+
+hover states
+
+smooth navigation
+
+minimal scroll effects
+
+Avoid:
+
+heavy parallax
+
+scroll hijacking
+
+animation everywhere
+
+long intro sequences
+
+effects that compromise performance
+
+Respect prefers-reduced-motion.
+
+Technical implementation
+Create the project from scratch in a fresh folder.
+
+You may choose the technology stack.
+
+Use a modern production-ready stack that is appropriate for a content-driven marketing website.
+
+A strong default would be:
+
+Next.js
+
+TypeScript
+
+modern CSS / Tailwind if useful
+
+but you may choose another stack if there is a clear reason.
+
+Prioritize:
+
+maintainability
+
+fast loading
+
+good SEO
+
+clean component architecture
+
+straightforward deployment
+
+good image optimization
+
+Do not introduce unnecessary infrastructure.
+
+Content architecture
+Do not hardcode content randomly throughout components.
+
+Create a clean content structure so Ortal's:
+
+courses
+
+testimonials
+
+navigation
+
+articles
+
+CTAs
+
+can be edited easily.
+
+For a small static site, structured TypeScript/JSON/Markdown content is acceptable.
+
+A CMS is NOT automatically necessary.
+
+Only introduce one if there is a strong reason.
+
+SEO
+Implement solid basic SEO.
+
+Include:
+
+Hebrew page titles
+
+unique meta descriptions
+
+semantic headings
+
+canonical URLs where appropriate
+
+Open Graph metadata
+
+social sharing image structure
+
+structured data where useful
+
+robots/sitemap
+
+meaningful URLs
+
+Potential schema types:
+
+Person
+
+Course
+
+Article
+
+Only add schema that accurately reflects the content.
+
+Accessibility
+Meet strong accessibility basics:
+
+keyboard navigation
+
+visible focus states
+
+semantic structure
+
+sufficient contrast
+
+image alt text
+
+accessible forms
+
+logical heading hierarchy
+
+reduced-motion support
+
+proper labels
+
+Performance
+Optimize for production.
+
+Pay special attention to:
+
+responsive images
+
+image compression
+
+lazy loading below the fold
+
+font loading
+
+JS bundle size
+
+layout shift
+
+mobile performance
+
+Do not sacrifice speed for decorative effects.
+
+Research workflow
+Do NOT immediately start coding.
+
+Phase 1 — Audit
+Thoroughly inspect the old site.
+
+Create an internal inventory of:
+
+every meaningful page
+
+major sections
+
+services
+
+courses
+
+testimonials
+
+blog articles
+
+images
+
+CTAs
+
+forms
+
+contact information
+
+external purchase links
+
+navigation
+
+footer content
+
+Also inspect the inspiration site carefully.
+
+Analyze:
+
+information density
+
+whitespace
+
+typography
+
+grid/layout
+
+photography
+
+navigation
+
+mobile
+
+section rhythm
+
+interaction
+
+card treatment
+
+CTA design
+
+Phase 2 — Information architecture
+Determine the new site map.
+
+Decide which old pages/content should be:
+
+retained
+
+merged
+
+rewritten
+
+removed
+
+promoted
+
+Do not preserve old structure unnecessarily.
+
+Phase 3 — Copy and design direction
+Before coding, write a short internal design brief containing:
+
+Brand direction
+What should the site feel like?
+
+Visual system
+Typography, colors, spacing, imagery.
+
+Content narrative
+How does the visitor move from first impression to trust to course discovery?
+
+Site map
+What pages are being created?
+
+Key conversion path
+How does someone go from:
+
+landing → understanding Ortal → discovering a course → registration/purchase?
+
+Do not wait for approval unless a genuinely blocking issue exists.
+
+Phase 4 — Implementation
+Build the full site.
+
+Do not stop at:
+
+mockups
+
+Figma-style descriptions
+
+wireframes
+
+static screenshot
+
+recommendations
+
+Deliver a working implementation.
+
+Phase 5 — Visual QA
+Inspect all primary pages at multiple viewport sizes.
+
+At minimum:
+
+~1440px desktop
+
+~1024px tablet
+
+~390px mobile
+
+Review:
+
+RTL
+
+line wrapping
+
+typography
+
+spacing
+
+navigation
+
+images
+
+cards
+
+CTAs
+
+footer
+
+forms
+
+article readability
+
+course conversion flow
+
+Fix the issues you find.
+
+Phase 6 — Functional QA
+Check:
+
+navigation links
+
+external links
+
+WhatsApp
+
+course CTAs
+
+registration/purchase links
+
+mobile menu
+
+forms
+
+article links
+
+accessibility basics
+
+No dead buttons.
+
+Phase 7 — Final report
+At completion provide:
+
+Site architecture created
+
+Main visual/design decisions
+
+Major copywriting changes
+
+Content removed/merged
+
+Images reused from the original site
+
+External imagery sourced
+
+Missing information / TODOs
+
+Missing purchase/payment integration if applicable
+
+Suggested future photography
+
+Instructions to run/build/deploy the project
+
+Important decision-making principle
+You have creative freedom.
+
+Do not repeatedly ask for approval on minor design decisions.
+
+Make strong design decisions based on the source material.
+
+If something is ambiguous but non-critical, choose the most reasonable solution and continue.
+
+Only stop for clarification if the missing information genuinely prevents implementation.
+
+Final quality bar
+Do not optimize merely for:
+
+"the old website, but cleaner."
+
+The result should feel like an entirely new website.
+
+Someone seeing it without context should believe:
+
+the brand has a clear identity
+
+the design was professionally art-directed
+
+the typography was deliberately chosen
+
+the photography has purpose
+
+the Hebrew copy was professionally edited
+
+the mobile layout was intentionally designed
+
+the website belongs to a real, distinctive person rather than a template
+
+The design reference should be recognizable as an influence in terms of sophistication and editorial restraint, but the final result must have its own identity.
+
+The key hierarchy is:
+
+Ortal as a person and brand
+
+Emotional resonance with the visitor
+
+Clear explanation of her work
+
+Courses/programs
+
+Trust and credibility
+
+Registration / purchase
+
+Articles and deeper exploration
+
+Build something exceptional, not merely acceptable.

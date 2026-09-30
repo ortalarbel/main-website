@@ -1,0 +1,66 @@
+.wrap {
+  display: grid;
+  justify-items: center;
+  gap: clamp(3rem, 2rem + 3vw, 4.5rem);
+  text-align: center;
+}
+
+.featured {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: var(--space-5);
+  max-inline-size: 50rem;
+}
+
+.mark {
+  font-family: var(--font-heading);
+  font-size: clamp(4rem, 3rem + 4vw, 7rem);
+  line-height: 0.5;
+  color: var(--terracotta);
+  padding-block-start: 0.35em;
+}
+
+.featuredQuote {
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.75rem);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.others {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+  inline-size: 100%;
+}
+
+.small {
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+  block-size: 100%;
+  padding: var(--space-6) var(--space-5);
+  background: var(--white);
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 14px rgb(33 40 55 / 0.06);
+}
+
+.small blockquote {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.small blockquote p + p {
+  margin-block-start: 0.2em;
+}
+
+.note {
+  font-weight: 400;
+}
+
+@media (max-width: 52rem) {
+  .others {
+    grid-template-columns: 1fr;
+  }
+}

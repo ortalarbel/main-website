@@ -1,0 +1,25 @@
+.signature {
+  display: inline-block;
+  aspect-ratio: 544 / 298;
+  inline-size: 7rem;
+  background-color: currentColor;
+  -webkit-mask: var(--sig) center / contain no-repeat;
+  mask: var(--sig) center / contain no-repeat;
+}
+
+/* Written right to left, like the hand that wrote it. */
+:global(.js) .writable {
+  clip-path: inset(0 0 0 100%);
+  transition: clip-path 2.2s cubic-bezier(0.55, 0.1, 0.3, 1) 0.15s;
+}
+
+:global(.js) .writable[data-written="true"] {
+  clip-path: inset(0 0 0 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(.js) .writable {
+    clip-path: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,133 @@
+.intro {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-4);
+  max-inline-size: 44rem;
+}
+
+.crumb {
+  font-size: var(--fs-meta);
+  color: var(--ink-muted);
+}
+
+.crumb a {
+  text-decoration: none;
+}
+
+.crumb a:hover {
+  text-decoration: underline;
+}
+
+.crumb span[aria-hidden] {
+  margin-inline: 0.5rem;
+  opacity: 0.6;
+}
+
+.format {
+  font-weight: 700;
+  color: var(--terracotta);
+}
+
+.introText {
+  font-size: var(--fs-lead);
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+.introText:first-of-type {
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.6rem);
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.registerNote {
+  font-size: var(--fs-small);
+  color: var(--ink-muted);
+}
+
+.context {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-5);
+  max-inline-size: 44rem;
+  padding-block-end: var(--space-5);
+  color: var(--ink-soft);
+  font-size: var(--fs-lead);
+}
+
+.context > p:first-of-type {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 1.05rem + 0.6vw, 1.5rem);
+  color: var(--ink);
+}
+
+.explore {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.explore li {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-heading);
+  font-size: clamp(1.15rem, 1rem + 0.6vw, 1.45rem);
+  line-height: 1.45;
+}
+
+.step {
+  display: grid;
+  place-items: center;
+  inline-size: 2.4rem;
+  block-size: 2.4rem;
+  border-radius: 50%;
+  border: 1.5px solid var(--terracotta);
+  color: var(--terracotta);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.detailsCol {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-6);
+}
+
+.detailsCol > dl {
+  inline-size: 100%;
+}
+
+.head {
+  margin-inline: auto;
+  display: grid;
+  justify-items: center;
+  margin-block-end: clamp(2.5rem, 2rem + 3vw, 4rem);
+}
+
+.guide {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-5);
+  max-inline-size: 40rem;
+}
+
+.guidePhoto {
+  inline-size: 11rem;
+  aspect-ratio: 0.85;
+}
+
+.guideLine {
+  font-size: var(--fs-lead);
+  color: var(--ink-soft);
+}
+
+.related {
+  color: var(--ink-soft);
+}
+
+.relatedLink {
+  font-weight: 700;
+  color: var(--ink);
+}

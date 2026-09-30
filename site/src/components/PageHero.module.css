@@ -1,0 +1,146 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  color: var(--cream);
+}
+
+.full {
+  min-block-size: min(calc(100svh - var(--header-h)), 52rem);
+}
+
+.page {
+  min-block-size: clamp(20rem, 42vw, 30rem);
+}
+
+.photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+/* Warm shade over the reading side so the words sit comfortably on the photo */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to right,
+    rgb(24 20 16 / 0.62) 0%,
+    rgb(24 20 16 / 0.4) 45%,
+    rgb(24 20 16 / 0.08) 75%,
+    rgb(24 20 16 / 0) 100%
+  );
+}
+
+.page::before {
+  background: rgb(24 20 16 / 0.45);
+}
+
+.inner {
+  padding-block: var(--space-9) calc(var(--space-9) + 1rem);
+}
+
+/* The text block sits on the left half (inline-end in RTL), clear of the subject on the right */
+.full .text {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-4);
+  inline-size: min(100%, 38rem);
+  margin-inline-start: auto;
+  text-align: center;
+}
+
+.page .text {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-4);
+  max-inline-size: 48rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.title {
+  color: var(--gold);
+  font-weight: 400;
+  line-height: 1.05;
+  text-shadow: 0 2px 18px rgb(0 0 0 / 0.25);
+}
+
+.full .title {
+  font-size: var(--fs-hero);
+}
+
+.page .title {
+  font-size: var(--fs-h1);
+}
+
+.subtitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 0.95rem + 0.7vw, 1.55rem);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: var(--cream);
+  text-shadow: 0 1px 12px rgb(0 0 0 / 0.35);
+  max-inline-size: 34ch;
+}
+
+.actions {
+  margin-block-start: var(--space-5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .full .photo img {
+    animation: settle 1.6s var(--ease-out) both;
+  }
+}
+
+@keyframes settle {
+  from {
+    transform: scale(1.04);
+  }
+}
+
+@media (max-width: 48rem) {
+  .full {
+    min-block-size: 0;
+    align-items: end;
+  }
+
+  .full .photo {
+    position: relative;
+    grid-area: 1 / 1;
+    block-size: 100%;
+    min-block-size: 36rem;
+  }
+
+  .full .photo img {
+    object-position: 68% 50% !important;
+  }
+
+  .full .inner {
+    grid-area: 1 / 1;
+    align-self: end;
+    padding-block: var(--space-8) calc(var(--space-8) + 0.5rem);
+  }
+
+  .full .text {
+    margin-inline: auto;
+  }
+
+  .hero::before {
+    background: linear-gradient(to top, rgb(24 20 16 / 0.72) 0%, rgb(24 20 16 / 0.35) 50%, rgb(24 20 16 / 0) 75%);
+  }
+
+  .page::before {
+    background: rgb(24 20 16 / 0.5);
+  }
+}

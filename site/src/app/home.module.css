@@ -1,0 +1,197 @@
+/* ---------- Shared ---------- */
+
+.sectionHead {
+  margin-inline: auto;
+  display: grid;
+  justify-items: center;
+  gap: var(--space-4);
+  max-inline-size: 44rem;
+  margin-block-end: clamp(3rem, 2rem + 3vw, 4.5rem);
+}
+
+.after {
+  margin-block-start: var(--space-8);
+}
+
+/* ---------- Who I am ---------- */
+
+.aboutHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 1rem + 3vw, 3.5rem);
+  margin-block-end: var(--space-7);
+}
+
+.aboutPhoto {
+  inline-size: clamp(10rem, 8rem + 8vw, 15rem);
+  aspect-ratio: 0.82;
+  flex: none;
+}
+
+.aboutText {
+  margin-inline: auto;
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+  max-inline-size: 42rem;
+  color: var(--ink-soft);
+}
+
+.hello {
+  color: var(--ink);
+}
+
+.aboutLead {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 1.05rem + 0.6vw, 1.5rem);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--ink);
+  max-inline-size: 30ch;
+  margin-block-end: var(--space-2);
+}
+
+.aboutQuote {
+  margin-block: var(--space-5) var(--space-2);
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.7rem);
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--ink);
+  max-inline-size: 26ch;
+}
+
+.aboutSignature {
+  inline-size: 8rem;
+  color: var(--terracotta);
+  margin-block-end: var(--space-3);
+}
+
+@media (max-width: 36rem) {
+  .aboutHead {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+}
+
+/* ---------- Recognition ---------- */
+
+.recognition {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-5);
+  max-inline-size: 48rem;
+}
+
+.critic {
+  display: grid;
+  gap: var(--space-3);
+  margin-block: var(--space-4);
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.7rem);
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--ink-muted);
+}
+
+.answer {
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 1.1rem + 1vw, 1.9rem);
+  font-weight: 500;
+  line-height: 1.45;
+  max-inline-size: 30ch;
+}
+
+.states {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--ink-soft);
+  letter-spacing: 0.01em;
+}
+
+.closeLine {
+  color: var(--ink-soft);
+}
+
+/* ---------- How I work ---------- */
+
+.method {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-8) clamp(2rem, 1rem + 3vw, 4rem);
+  margin-block-end: var(--space-8);
+  text-align: center;
+}
+
+.method li {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: var(--space-3);
+}
+
+.methodIcon {
+  inline-size: 3.5rem;
+  block-size: 3.5rem;
+  color: var(--terracotta);
+}
+
+.methodTitle {
+  font-size: var(--fs-h3);
+  font-weight: 700;
+}
+
+.method p {
+  max-inline-size: 30ch;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 48rem) {
+  .method {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Beliefs ---------- */
+
+.beliefs {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-6);
+  max-inline-size: 50rem;
+}
+
+.beliefList {
+  display: grid;
+  gap: var(--space-4);
+  color: var(--ink-soft);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.beliefList strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.method2 {
+  font-weight: 700;
+  color: var(--ink);
+  max-inline-size: 40ch;
+}
+
+.beliefsPhoto {
+  inline-size: clamp(11rem, 9rem + 6vw, 15rem);
+  aspect-ratio: 1;
+  margin-block-start: var(--space-4);
+}
+
+/* ---------- Closing ---------- */
+
+.closing {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-5);
+  max-inline-size: 44rem;
+}

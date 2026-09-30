@@ -1,0 +1,42 @@
+.bar {
+  display: none;
+}
+
+@media (max-width: 52rem) {
+  .bar {
+    position: fixed;
+    inset-inline: 0;
+    inset-block-end: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: 0.7rem var(--gutter) calc(0.7rem + env(safe-area-inset-bottom));
+    background: var(--white);
+    border-block-start: 1px solid var(--rule-strong);
+    transform: translateY(110%);
+    transition: transform 0.45s var(--ease-out);
+  }
+
+  .bar[data-show="true"] {
+    transform: none;
+  }
+
+  .bar :global(.actions) {
+    flex: none;
+  }
+
+  .bar :global(.btn) {
+    min-block-size: 2.9rem;
+    padding-inline: 1rem;
+    font-size: 0.98rem;
+  }
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  line-height: 1.2;
+  min-inline-size: 0;
+}

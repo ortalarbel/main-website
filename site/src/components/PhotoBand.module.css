@@ -1,0 +1,13 @@
+.band {
+  position: relative;
+  block-size: clamp(9rem, 14vw, 13rem);
+}
+
+.tall {
+  block-size: clamp(16rem, 38vw, 34rem);
+}
+
+.photo {
+  position: absolute;
+  inset: 0;
+}

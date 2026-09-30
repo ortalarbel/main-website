@@ -1,0 +1,88 @@
+.lead {
+  max-inline-size: 40rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 1.1rem + 0.9vw, 1.8rem);
+  line-height: 1.5;
+}
+
+.head {
+  margin-inline: auto;
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+  margin-block-end: clamp(2.5rem, 2rem + 3vw, 4rem);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-8) clamp(2rem, 1rem + 3vw, 4rem);
+  margin-block: clamp(2.5rem, 2rem + 2vw, 4rem);
+}
+
+.steps li {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: var(--space-3);
+}
+
+.steps p {
+  max-inline-size: 32ch;
+  color: var(--ink-soft);
+}
+
+.stepNum {
+  display: grid;
+  place-items: center;
+  inline-size: 3rem;
+  block-size: 3rem;
+  border-radius: 50%;
+  border: 1.5px solid var(--terracotta);
+  color: var(--terracotta);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.place {
+  max-inline-size: 48ch;
+  color: var(--ink-soft);
+}
+
+.place strong {
+  color: var(--ink);
+}
+
+.compare {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+  max-inline-size: 60rem;
+  margin-block-start: clamp(2.5rem, 2rem + 2vw, 4rem);
+}
+
+.compareCol {
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+  padding: clamp(1.75rem, 1rem + 2vw, 3rem);
+  border-radius: 1.5rem;
+  background: var(--cream);
+  color: var(--ink-soft);
+}
+
+.compareLit {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.compareLit h3 {
+  color: var(--gold);
+}
+
+@media (max-width: 48rem) {
+  .steps,
+  .compare {
+    grid-template-columns: 1fr;
+  }
+}
